@@ -8,7 +8,156 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear"
+        android:background="#ccc"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c2c2c2"
+        android:layout_above="@+id/linear"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          >
+
+          <TextView
+              android:id="@+id/linearLayout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="16sp"
+              android:gravity="center"
+              android:text="Linear Layout"
+              android:textColor="#000"/>
+
+          <Button
+              android:layout_margin="5dp"
+              android:id="@+id/linearVertical"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:text="vertical"
+              android:background="@color/back"
+              android:layout_below="@+id/linearLayout"
+              android:layout_centerHorizontal="true"
+              android:textColor="#000000"
+              android:textSize="15sp"/>
+          <Button
+              android:layout_margin="5dp"
+              android:id="@+id/linearHorizontal"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:layout_below="@+id/linearVertical"
+              android:text="horizontal"
+              android:layout_centerHorizontal="true"
+              android:textColor="#000000"
+              android:background="@color/back"
+              android:layout_marginTop="5dp"
+              android:textSize="15sp"/>
+
+      </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:text="Grid Layout"
+                android:textColor="#000"/>
+
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/gridVertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/gridLayout"
+                android:text="vertical"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:background="@color/back"
+                android:textSize="15sp"/>
+
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/gridHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/gridVertical"
+                android:text="horizontal"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:background="@color/back"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/staggeredLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Staggered Layout"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#000" />
+
+
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/staggeredVertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/staggeredLayout"
+                android:text="vertical"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:background="@color/back"
+                android:textSize="15sp"/>
+
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/staggeredHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/staggeredVertical"
+                android:text="horizontal"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:background="@color/back"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
 
 </RelativeLayout>
