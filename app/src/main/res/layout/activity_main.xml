@@ -42,7 +42,7 @@
               android:textSize="16sp"
               android:gravity="center"
               android:text="Linear Layout"
-              android:textColor="#000"/>
+              android:textColor="@color/black"/>
 
           <Button
               android:layout_margin="5dp"
@@ -53,7 +53,7 @@
               android:background="@color/back"
               android:layout_below="@+id/linearLayout"
               android:layout_centerHorizontal="true"
-              android:textColor="#000000"
+              android:textColor="@color/black"
               android:textSize="15sp"/>
           <Button
               android:layout_margin="5dp"
@@ -63,7 +63,7 @@
               android:layout_below="@+id/linearVertical"
               android:text="horizontal"
               android:layout_centerHorizontal="true"
-              android:textColor="#000000"
+              android:textColor="@color/black"
               android:background="@color/back"
               android:layout_marginTop="5dp"
               android:textSize="15sp"/>
@@ -83,7 +83,7 @@
                 android:textSize="15sp"
                 android:layout_height="wrap_content"
                 android:text="Grid Layout"
-                android:textColor="#000"/>
+                android:textColor="@color/black"/>
 
             <Button
                 android:layout_margin="5dp"
@@ -93,7 +93,7 @@
                 android:layout_below="@+id/gridLayout"
                 android:text="vertical"
                 android:layout_centerHorizontal="true"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:background="@color/back"
                 android:textSize="15sp"/>
 
@@ -105,7 +105,7 @@
                 android:layout_below="@+id/gridVertical"
                 android:text="horizontal"
                 android:layout_centerHorizontal="true"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:background="@color/back"
                 android:layout_marginTop="5dp"
                 android:textSize="15sp"/>
@@ -125,7 +125,7 @@
                 android:text="Staggered Layout"
                 android:textSize="15sp"
                 android:gravity="center"
-                android:textColor="#000" />
+                android:textColor="@color/black"/>
 
 
             <Button
@@ -136,7 +136,7 @@
                 android:layout_below="@+id/staggeredLayout"
                 android:text="vertical"
                 android:layout_centerHorizontal="true"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:background="@color/back"
                 android:textSize="15sp"/>
 

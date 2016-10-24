@@ -80,9 +80,6 @@ public  class MainActivity extends AppCompatActivity implements View.OnClickList
         recyclerView.setHasFixedSize(true);
 
 
-        //intialize linear layout manager vertically
-        LinearLayoutManager linearVertical = new LinearLayoutManager(MainActivity.this,LinearLayoutManager.VERTICAL,false);
-        recyclerView.setLayoutManager(linearVertical);
 
 
         linHorizontal = (Button) findViewById(R.id.linearHorizontal);
@@ -101,6 +98,15 @@ public  class MainActivity extends AppCompatActivity implements View.OnClickList
         notificationAdapter = new NotificationAdapter(MainActivity.this,recyclerView,dat);
         recyclerView.setAdapter(notificationAdapter);
 
+        recycler();
+
+    }
+
+    private void recycler() {
+
+        //intialize linear layout manager vertically
+        LinearLayoutManager linearVertical = new LinearLayoutManager(MainActivity.this,LinearLayoutManager.VERTICAL,false);
+        recyclerView.setLayoutManager(linearVertical);
     }
 
     @Override
@@ -108,7 +114,7 @@ public  class MainActivity extends AppCompatActivity implements View.OnClickList
         switch (v.getId()){
             case R.id.linearVertical:
 
-                //intialize linear layout manager vertically.
+                //intialize linear layout manager vertically
                 LinearLayoutManager linearVertical = new LinearLayoutManager(MainActivity.this,LinearLayoutManager.VERTICAL,false);
                 recyclerView.setLayoutManager(linearVertical);
 
@@ -218,6 +224,16 @@ public  class MainActivity extends AppCompatActivity implements View.OnClickList
 
         }
 
+
+
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        recycler();
 
 
     }
