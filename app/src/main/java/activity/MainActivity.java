@@ -72,9 +72,6 @@ public  class MainActivity extends AppCompatActivity implements View.OnClickList
                 new Holder(R.drawable.twitter,"title"),
                 new Holder(R.drawable.eagle,"title"),
 
-
-
-
         };
 
         //initialize recyclerview
@@ -111,7 +108,7 @@ public  class MainActivity extends AppCompatActivity implements View.OnClickList
         switch (v.getId()){
             case R.id.linearVertical:
 
-                //intialize linear layout manager vertically
+                //intialize linear layout manager vertically.
                 LinearLayoutManager linearVertical = new LinearLayoutManager(MainActivity.this,LinearLayoutManager.VERTICAL,false);
                 recyclerView.setLayoutManager(linearVertical);
 
@@ -130,7 +127,7 @@ public  class MainActivity extends AppCompatActivity implements View.OnClickList
 
             case R.id.linearHorizontal:
 
-                //initialize linear layout manager horizontally
+                //initialize linear layout manager horizontally.
                 LinearLayoutManager linearHorizontal = new LinearLayoutManager(MainActivity.this,LinearLayoutManager.HORIZONTAL,false);
                 recyclerView.setLayoutManager(linearHorizontal);
 
@@ -150,7 +147,9 @@ public  class MainActivity extends AppCompatActivity implements View.OnClickList
 
             case R.id.gridVertical:
 
-                //for vertical scroll
+
+                 //for vertical scroll.
+                //second parameter is for number of columns.
                 GridLayoutManager gridVertical = new GridLayoutManager(MainActivity.this,3,GridLayoutManager.VERTICAL,false);
                 recyclerView.setLayoutManager(gridVertical);
 
@@ -172,7 +171,7 @@ public  class MainActivity extends AppCompatActivity implements View.OnClickList
 
                 //here the second parameter is for number of rows.
                 //third parameter is for horizontal scroll.
-                //fourth paramter is boolean,when it set to false,layout from start to end
+                //fourth paramter is boolean,when it set to false,layout from start to end.
                 GridLayoutManager gridHorizontal = new GridLayoutManager(MainActivity.this,2,GridLayoutManager.HORIZONTAL,false);
                 recyclerView.setLayoutManager(gridHorizontal);
 
@@ -192,7 +191,8 @@ public  class MainActivity extends AppCompatActivity implements View.OnClickList
 
             case R.id.staggeredVertical:
 
-                //second param represents vertical scroll
+                //here first param represents number of columns.
+                //second param represents vertical scroll.
                 StaggeredGridLayoutManager staggeredGridVertical=new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL);
                 recyclerView.setLayoutManager(staggeredGridVertical);
 
@@ -207,6 +207,8 @@ public  class MainActivity extends AppCompatActivity implements View.OnClickList
                 linHorizontal.setTextColor(Color.parseColor("#000000"));
                 gVertical.setTextColor(Color.parseColor("#000000"));
                 gHorizontal.setTextColor(Color.parseColor("#000000"));
+
+
 
                 break;
 
